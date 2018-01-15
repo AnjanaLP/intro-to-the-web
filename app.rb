@@ -16,8 +16,6 @@ get '/next-secret' do
   "New secrets!"
 end
 
-set :public_folder, 'public'
-
 get '/cat' do
-  redirect '/cat.html'
+  erb(:index)
 end
